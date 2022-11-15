@@ -265,6 +265,12 @@
     width: auto;
     text-align: center;
   }
+  .hero-heading {
+    font-size: 1.625rem;
+  }
+  .hero-text {
+    font-size: 1rem;
+  }
   .hero-image {
     width: 100%;
   }
@@ -295,6 +301,14 @@
   .service-heading {
     font-size: 15px;
   }
+    .fas,
+.fa-solid,
+.fa-regular{
+  font-size: 1.6875rem;
+}
+.s-h{
+  margin: 1rem 2rem;
+}
   .g-d-p {
     font-size: 8px;
     width: 85%;
@@ -357,119 +371,10 @@
   .footer p {
     font-size: 12px;
   }
+
 }
-/* } */
 
-/* .container{
-      width: 5rem;
-    }
-    .hero{
-      width: 5rem;
-    }
-    .hero-text{
-      text-align: center;
-    }
-  .link-nav:link,
-  .link-nav:visited{
-    font-size: 2rem;
-    line-height: 2;
-  }
-  .main-nav-list{
-    gap: 2.4rem;
-  }
 
-  .grid {
-    row-gap: 4.8rem;
-    column-gap: 0.2rem;
-  }
-
-  .grid--2--col,
-  .grid--3--cols,
-  .grid--4--col {
-    grid-template-columns: 1fr;
-  }
-
-  .btn,
-  .btn:link,
-  .btn:visited {
-    padding: 2.4rem 1.2rem;
-  }
-   
- 
-  .buttons-hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.1rem;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .section-hero {
-    padding: 2.4rem 0 6.4rem 0;
-  }
-
-  .hero {
-    padding: 0 3.2rem;
-  }
-
-  .hero-image {
-    width: 80%;
-  }
-
-  .logo img {
-    height: 1.2rem;
-  }
-  .customers{
-    margin-right: 1.2rem;
-  }
-  .step-image-box:nth-child(2) {
-    grid-row: 1;
-  }
-
-  .step-image-box:nth-child(6) {
-    grid-row: 5;
-  }
-  .section-meals {
-    padding: 4.6rem;
-  }
-  .section-pricing {
-    padding: 9.6rem 0;
-  }
-  .step-image-box {
-    transform: translateY(2.4rem);
-  }
-  .grid--3--cols{
-    margin: 0 -3.2rem;
-  }
-
-  .testimonials {
-    grid-template-columns: 1fr;
-  }
-  .section-testimonial {
-    padding: 3.6rem;
-  }
-  .gallary {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.2rem;
-    padding: 0;
-    maf
-  }
-
-  .cta {
-    grid-template-columns: 1fr;
-  }
-
-  .cta-text-box {
-    padding: 3.2rem;
-  }
-
-  .cta-image {
-    height: 32rem;
-    grid-row: 1;
-  }
-} */
-
-/* 
 - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 - Spacing system (px)
