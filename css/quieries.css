@@ -1,249 +1,132 @@
-/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
-
-/**************************/
-/* BELOW 1344px (Smaller desktops) */
-/**************************/
-
-/* @media (max-width: 84em) {
-  .hero {
-    max-width: 120rem;
-  }
-
-  .heading-primary {
-    font-size: 4.4rem;
-  }
-
-  .gallary {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .container {
-    max-width: 120rem;
-  }
-} */
-
 /**************************/
 /* BELOW 1200px (Landscape Tablets) */
 /**************************/
-
-/* @media (max-width: 75em) {
-  html {
-    9px / 16px 
-    font-size: 56.25%;
+@media (max-width: 75rem) {
+  .right-service {
+    width: 100%;
   }
-
-  .grid {
-    column-gap: 4.8rem;
-    row-gap: 6.4rem;
+  .image-service {
+    display: none;
   }
-
-  .heading-secondary {
-    font-size: 3.6rem;
-  }
-
-  .heading-tertiary {
-    font-size: 2.4rem;
-  }
-
-  .header {
-    padding: 0 3.2rem;
-  }
-
-  .main-nav-list {
-    gap: 3.2rem;
-  }
-
-  .hero {
-    gap: 4.8rem;
-  }
-
-  .testimonials-container {
-    padding: 9.6rem 3.2rem;
-  }
-/* } */
-
+}
 /**************************/
 /* BELOW 944px (Tablets) */
 /**************************/
-
-/* @media (max-width: 59em) {
-  html {
-    /* 8px / 16px = 0.5 = 50% */
-/* font-size: 50%;
+@media (max-width: 59em) {
+  /* .feature {
+    display: flex;
+    flex-wrap: wrap;
   }
-
-  .hero {
-    grid-template-columns: 1fr;
-    padding: 0 8rem;
-    gap: 6.4rem;
+  .feature {
+    margin-left: auto;
+    margin-right: auto;
+  } */
+  .right-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-
-  .hero-text-box,
-  .hero-image-box {
+  .s-h {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+  .s-h h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .s-h p {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .fas,
+  .fa-solid,
+  .fa-regular {
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 1.5rem;
+  }
+  .services {
+    font-size: 70px;
+  }
+}
+/**************************/
+/* BELOW 914px */
+/**************************/
+@media (max-width: 57.125rem) {
+  .feature {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+/**************************/
+/* BELOW 750px */
+/**************************/
+@media (max-width: 46.875em) {
+  .proto-image {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sh {
+    margin-top: 2rem;
+    width: 18rem;
+    margin-right: 2rem;
+  }
+  .proto-para {
+    font-size: 0.8rem;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  .a-c {
+    padding-top: 1rem;
+  }
+  .st-p,
+  .nd-p {
     text-align: center;
   }
 
-  .hero-image {
-    width: 60%;
+  .about-img {
+    margin-bottom: 5rem;
   }
-
-  .delivered-meal {
-    justify-content: center;
-    margin-top: 3.8rem;
-  }
-
-  .customer img {
-    height: 2.4rem;
-  }
-
-  .step-number {
-    font-size: 7.4rem;
-  }
-
-  .meal-content {
-    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
-  }
-
-  .section-testimonial {
-    grid-template-columns: 1fr;
-  }
-
-  .gallary {
-    grid-template-columns: repeat(6, 1fr);
-  }
-
-  .cta {
-    /* 3/5 = 60% + 2/5 = 40% */
-/* grid-template-columns: 3fr 2fr;
-  }
-
-  .cta-form {
-    grid-template-columns: 1fr;
-  }
-
-  .btn--form {
-    margin-top: 1.6rem;
-  }  */
-
-/* MOBILE NAVIGATION */
-/* .btn-mobile-nav {
-    display: block;
-    z-index: 9999;
-  } */
-
-/* .main-nav {
-    background-color: rgba(255, 255, 255, 0.97);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    transform: translateX(100%);
-
-    display: flex;
-    align-items: center;
-
-    justify-content: center;
-    transition: all 0.5s ease-in;
-    opacity: 0%;
-
-    pointer-events: none;
-    visibility: hidden;
-  }
-  .main-nav .link-nav {
-    font-size: 5.2rem;
-  }
-  .nav-open .main-nav {
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-    transform: translateX(0%);
-  }
-  .nav-open .icon-mobile-nav[name="close-outline"] {
-    display: block;
-  }
-  .nav-open .icon-mobile-nav[name="menu-outline"] {
-    display: none;
-  }
-
-  .main-nav-list {
-    flex-direction: column;
-    gap: 7.8rem;
-  }
-  footer.container {
-    max-width: 120rem;
-  } */
-/* } */
+}
 
 /**************************/
-/* BELOW 704px (Smaller tablets) */
+/* BELOW 704px (smaller tablets) */
 /**************************/
-/* 
 @media (max-width: 44em) {
-  .grid--3--cols,
-  .grid--4--col {
-    grid-template-columns: repeat(2, 1fr);
+  .services,
+  .c-heading,
+  .proto-heading {
+    font-size: 2.1875rem;
   }
-
-  .list-of-diets {
-    grid-column: 1 / -1;
-    justify-self: center;
-  }
-
-  .heading-secondary {
-    margin-bottom: 4.8rem;
-  }
-
-  .pricing-plan {
-    width: 100%;
-  }
-
-  .logo {
+  .proto-image {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  .logo img {
-    height: 2.4rem;
-  }
-
-  .footer-heading {
-    margin-bottom: 2rem;
-  }
-  .footer-nav {
-    line-height: 1.7;
-  }
-  .pricing-plan {
+  .sh {
+    margin-top: 2rem;
     width: 100%;
+    margin: 1rem auto;
   }
-  .social-icon {
-    height: 3.4rem;
-    width: 2.4rem;
+  .proto-para {
+    font-size: 0.8rem;
   }
-  a .btn-plan,
-  .btn-plan {
-    display: inline-table;
-    width: 50%;
-  }
-  .grid--footer {
-    grid-template-columns: repeat(6, 1fr);
-  }
-
-  .logo-col,
-  .address-col {
-    grid-column: span 3;
-  }
-
-  .nav-col {
-    grid-row: 1;
-    grid-column: span 2;
-    margin-bottom: 3.2rem;
-  }
-} */
+}
 
 /**************************/
-/* BELOW 544px (Phones) */
-/**************************/
-
-@media (max-width: 38em) {
+/* BELOW  544 PX MOBILES*/
+/* ************************ */
+@media (max-width: 34em) {
   /* Nav Bar */
   .navigation {
     height: 0.6rem;
@@ -280,6 +163,11 @@
   .grid {
     grid-template-columns: 1fr;
   }
+  .feature_one,
+  .g-d-p,
+  .nd-p {
+    font-size: 0.75rem;
+  }
   /* Service */
   .services {
     font-size: 35px;
@@ -301,16 +189,15 @@
   .service-heading {
     font-size: 15px;
   }
-    .fas,
-.fa-solid,
-.fa-regular{
-  font-size: 1.6875rem;
-}
-.s-h{
-  margin: 1rem 2rem;
-}
+  .fas,
+  .fa-solid,
+  .fa-regular {
+    font-size: 1.6875rem;
+  }
+  .s-h {
+    margin: 1rem 2rem;
+  }
   .g-d-p {
-    font-size: 8px;
     width: 85%;
   }
   .image-service {
@@ -338,26 +225,8 @@
     font-size: 9px;
     margin-top: 1rem;
   }
-  .proto-heading {
-    font-size: 14px;
-  }
-  /* ABOUT */
-  .a-c {
-    padding-top: 1rem;
-  }
-  .st-p {
-    text-align: center;
-  }
-  .about-content {
-    flex-direction: column;
-  }
-  .about-img {
-    margin-bottom: 5rem;
-  }
+
   /* CONTACT */
-  .c-heading {
-    font-size: 19px;
-  }
   .contact-link {
     font-size: 20px;
   }
@@ -371,12 +240,4 @@
   .footer p {
     font-size: 12px;
   }
-
 }
-
-
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/
