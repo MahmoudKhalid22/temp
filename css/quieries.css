@@ -104,7 +104,6 @@
 /**************************/
 @media (max-width: 44em) {
   .services,
-  .c-heading,
   .proto-heading {
     font-size: 2.1875rem;
   }
@@ -120,6 +119,10 @@
   }
   .proto-para {
     font-size: 0.8rem;
+  }
+  .h-line {
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -144,24 +147,12 @@
     width: 2.3rem;
   }
   /* HERO */
-  .hero {
-    width: auto;
-    text-align: center;
-  }
+
   .hero-heading {
     font-size: 1.625rem;
   }
   .hero-text {
     font-size: 1rem;
-  }
-  .hero-image {
-    width: 100%;
-  }
-  .container {
-    width: auto;
-  }
-  .grid {
-    grid-template-columns: 1fr;
   }
   .feature_one,
   .g-d-p,
@@ -169,25 +160,11 @@
     font-size: 0.75rem;
   }
   /* Service */
-  .services {
-    font-size: 35px;
-    text-align: center;
-  }
+
   .advice-service {
     font-size: 13px;
     text-align: center;
-    margin-top: -15px;
-  }
-  .right-service {
-    display: flex;
-    flex-direction: column;
-  }
-  .content-service {
-    display: flex;
-    flex-direction: column;
-  }
-  .service-heading {
-    font-size: 15px;
+    margin-top: -10px;
   }
   .fas,
   .fa-solid,
@@ -195,26 +172,13 @@
     font-size: 1.6875rem;
   }
   .s-h {
-    margin: 1rem 2rem;
-  }
-  .g-d-p {
-    width: 85%;
-  }
-  .image-service {
-    justify-self: left;
-    margin: 0;
-    width: 85%;
+    margin-top: 2rem;
   }
   /* PROTOFOLIO */
-
   .service .title-service p {
-    font-size: 13px;
+    font-size: 0.8125rem;
     text-align: center;
-    margin-top: -20px;
-  }
-  .proto-image {
-    grid-template-columns: 1fr;
-    margin-top: 3.5rem;
+    margin-top: -10px;
   }
   .proto-img-1,
   .proto-img-2,
@@ -227,8 +191,11 @@
   }
 
   /* CONTACT */
+  .c-heading {
+    font-size: 1.5rem;
+  }
   .contact-link {
-    font-size: 20px;
+    font-size: 1rem;
   }
   .contact-social {
     font-size: 9px;
