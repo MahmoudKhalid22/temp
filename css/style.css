@@ -22,9 +22,16 @@ body {
 .logo-image {
   width: 6rem;
 }
-.menu-icon {
-  height: 2rem;
-  width: 2rem;
+.navigation .nav .menu-icon,
+.navigation .nav .fa-x {
+  color: #111;
+  font-size: 2rem;
+  position: absolute;
+  top: -15px;
+  transition: 0.3s;
+}
+.navigation .nav .fa-x {
+  display: none;
 }
 .links {
   position: relative;
@@ -40,6 +47,7 @@ body {
   top: calc(100% + 15px);
   display: none;
   z-index: 1;
+  transition: 0.3s;
 }
 .navigation .links ul::before {
   content: "";
@@ -49,6 +57,7 @@ body {
   position: absolute;
   right: 5px;
   top: -20px;
+  transition: 0.3s;
 }
 .navigation .links ul li a {
   display: block;
@@ -62,9 +71,10 @@ body {
 .navigation .links ul li:not(:last-child) a {
   border-bottom: 1px solid #ddd;
 }
-.navigation .links:hover ul {
+
+/* .navigation .links:hover ul {
   display: block;
-}
+} */
 /* ********************* */
 /* HERO SECTION  */
 /* ********************* */
@@ -167,6 +177,9 @@ body {
 .image-service {
   width: 260px;
   margin-left: 2rem;
+  transition: 1s;
+  animation: move 4s linear infinite;
+  position: relative;
 }
 .service-heading {
   font-weight: 800;
@@ -187,9 +200,8 @@ body {
 }
 
 /* ********************** */
-/*      PROTOFOLIO        */
+/*      PORTFOLIO        */
 /* ********************** */
-
 .sec-proto {
   background-color: #f6f6f6;
 }
@@ -199,9 +211,28 @@ body {
   column-gap: 30px;
 }
 .p-i {
-  /* width: 10rem;
-  height: 10rem; */
   max-width: 100%;
+}
+.image-holder {
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.image-holder::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 11;
+  transition: 0.3s;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.image-holder:hover::before {
+  animation: flashing 0.7s;
 }
 .proto-image {
   margin-top: 8rem;
@@ -227,7 +258,7 @@ body {
 }
 
 /* ********************** */
-/*          ABOUT        */
+/*        ABOUT        */
 /* ******************** */
 
 .a-c {
@@ -345,4 +376,28 @@ hr {
 span {
   color: #10cab7;
   font-weight: bold;
+}
+/* ********************* */
+/* CREATING ANIMATIONS */
+/* ********************* */
+@keyframes flashing {
+  0%,
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 200%;
+    height: 200%;
+  }
+}
+
+@keyframes move {
+  0%,
+  100% {
+    top: 0;
+  }
+  50% {
+    top: 20px;
+  }
 }
