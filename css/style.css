@@ -11,6 +11,24 @@ body {
   width: 100%;
 }
 
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  visibility: visible;
+}
+.hide-preloader {
+  visibility: hidden;
+  z-index: -9999;
+}
+/* navigation */
 .navigation {
   margin: 1.2rem 2.4rem;
 }
