@@ -7,6 +7,15 @@
 body {
   font-family: "Work Sans", sans-serif;
 }
+/* ***************** */
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* ***************** */
 .container {
   width: 100%;
 }
@@ -28,71 +37,60 @@ body {
   visibility: hidden;
   z-index: -9999;
 }
+.gifpreloader {
+  width: 18rem;
+  height: 18rem;
+}
 /* navigation */
 .navigation {
-  margin: 1.2rem 2.4rem;
+  margin: 0 2.4rem;
+  padding: 0.75rem 0;
+  position: fixed;
+  z-index: 30;
+  background-color: #fff;
+  box-shadow: 0px 8px 5px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 8px 5px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 8px 5px -6px rgba(0, 0, 0, 0.75);
 }
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 .logo-image {
   width: 6rem;
 }
-.navigation .nav .menu-icon,
-.navigation .nav .fa-x {
+.nav .menu-icon,
+.nav .fa-x {
   color: #111;
-  font-size: 2rem;
-  position: absolute;
-  top: -15px;
   transition: 0.3s;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
-.navigation .nav .fa-x {
+.nav .menu-icon:hover {
+  color: #000;
+}
+.nav .fa-x {
   display: none;
-}
-.links {
-  position: relative;
 }
 .nav-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background-color: #f6f6f6;
-  position: absolute;
-  right: 0;
-  min-width: 200px;
-  top: calc(100% + 15px);
-  display: none;
-  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  height: auto;
+  overflow: hidden;
+}
+.nav-links li a {
+  font-size: 1.25rem;
+  color: #444;
   transition: 0.3s;
 }
-.navigation .links ul::before {
-  content: "";
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent transparent #f6f6f6 transparent;
-  position: absolute;
-  right: 5px;
-  top: -20px;
-  transition: 0.3s;
-}
-.navigation .links ul li a {
-  display: block;
-  text-decoration: none;
-  padding: 1.2rem;
-  transition: 0.3s;
-}
-.navigation .links ul li a:hover {
-  padding-left: 2rem;
-}
-.navigation .links ul li:not(:last-child) a {
-  border-bottom: 1px solid #ddd;
+.nav-links li a:hover {
+  color: #000;
 }
 
-/* .navigation .links:hover ul {
-  display: block;
-} */
 /* ********************* */
 /* HERO SECTION  */
 /* ********************* */
