@@ -41,6 +41,16 @@ a {
   width: 18rem;
   height: 18rem;
 }
+/* Scroller */
+.scroller {
+  top: 0;
+  left: 0;
+  background-color: #333;
+  height: 6px;
+  z-index: 100;
+  position: fixed;
+}
+
 /* navigation */
 .navigation {
   margin: 0 2.4rem;

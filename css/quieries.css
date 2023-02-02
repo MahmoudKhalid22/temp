@@ -167,10 +167,14 @@
 @media (max-width: 34em) {
   /* Nav Bar */
   .navigation {
-    height: 1.25rem;
+    height: 2.25rem;
   }
   .nav-links {
     width: 10rem;
+  }
+  .nav .menu-icon,
+  .nav .fa-x {
+    font-size: 1rem;
   }
   .container {
     padding-left: 1rem;
