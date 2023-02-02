@@ -149,16 +149,26 @@ a {
   font-style: normal;
   text-align: center;
   transition: 0.3s;
-  text-shadow: 0 0 16px #000;
   filter: blur(10px);
   position: relative;
   /* font-family: sans-serif; */
 }
+.feature_remove_blur {
+  filter: blur(0);
+}
 .feature_right {
-  right: -30rem;
+  right: -100rem;
+  transition: 0.3s;
+}
+.feature_remove_right {
+  right: 0;
 }
 .feature_left {
-  left: -30rem;
+  left: -100rem;
+  transition: 0.3s;
+}
+.feature_remove_left {
+  left: 0;
 }
 .feature-heading {
   font-weight: 800;
@@ -222,9 +232,19 @@ a {
   font-weight: 800;
   margin-bottom: 1.3rem;
 }
+
 .s-h {
   margin-bottom: 2.5rem;
   position: relative;
+  filter: blur(5px);
+  left: -100rem;
+  transition: 0.3s;
+}
+.s-h_remove_left {
+  left: 0;
+}
+.s-h_remove_blur {
+  filter: blur(0);
 }
 .fas,
 .fa-solid,
