@@ -60,7 +60,7 @@ function animationServiceBoxes() {
     const boxTop = box.getBoundingClientRect().top;
     if(serviceBottomTrigger < boxTop){
         box.classList.add("s-h_remove_blur");
-        box.classList.add("s-h_remove_left")
+        box.classList.toggle("s-h_remove_left")
     }
   })
 }
