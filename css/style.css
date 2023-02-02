@@ -6,6 +6,7 @@
 }
 body {
   font-family: "Work Sans", sans-serif;
+  overflow-x: hidden;
 }
 /* ***************** */
 ul {
@@ -147,7 +148,17 @@ a {
   line-height: 1.9;
   font-style: normal;
   text-align: center;
+  transition: 0.3s;
+  text-shadow: 0 0 16px #000;
+  filter: blur(10px);
+  position: relative;
   /* font-family: sans-serif; */
+}
+.feature_right {
+  right: -30rem;
+}
+.feature_left {
+  left: -30rem;
 }
 .feature-heading {
   font-weight: 800;

@@ -2,6 +2,7 @@ const menuIcon = document.querySelector(".menu-icon");
 list = document.querySelector(".nav-links");
 const preloader = document.querySelector(".preloader");
 const scroller = document.querySelector(".scroller");
+
 // preloader
 window.addEventListener("load", () => {
   preloader.classList.add("hide-preloader");
@@ -21,3 +22,5 @@ function updateProgressBar() {
 }
 
 window.addEventListener("scroll", updateProgressBar);
+
+// animation
