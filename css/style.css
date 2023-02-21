@@ -142,33 +142,39 @@ a {
 .feature {
   padding: 6rem 2rem;
   background-color: #f2d7d7;
+  overflow: hidden;
 }
-.feature_one {
+ .feature_one {
   padding: 2rem;
   line-height: 1.9;
   font-style: normal;
   text-align: center;
-  transition: 0.3s;
+  transition: 1s ease;
   filter: blur(10px);
+  visibility: hidden;
   position: relative;
-  /* font-family: sans-serif; */
 }
 .feature_remove_blur {
   filter: blur(0);
+  visibility: visible;
 }
 .feature_right {
   right: -100rem;
-  transition: 0.3s;
 }
 .feature_remove_right {
-  right: 0;
-}
+  right: 0; 
+ }
 .feature_left {
   left: -100rem;
-  transition: 0.3s;
+  transition: 1s ease;
 }
 .feature_remove_left {
   left: 0;
+} 
+.feature_center{
+  bottom: -7rem;
+}.feature_remove_center{
+  bottom: 0;
 }
 .feature-heading {
   font-weight: 800;
@@ -236,9 +242,9 @@ a {
 .s-h {
   margin-bottom: 2.5rem;
   position: relative;
-  filter: blur(5px);
+  filter: blur(10px);
   left: -100rem;
-  transition: 0.3s;
+  transition: 1.3s ease;
 }
 .s-h_remove_left {
   left: 0;
